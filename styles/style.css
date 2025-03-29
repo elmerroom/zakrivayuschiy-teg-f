@@ -13,4 +13,357 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family:'Roboto', sans-serif;
+  font-size: 18px;
+  font-variation-settings: 'wght' 400;
+  background-image: var(--gradient);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  inline-size: var(--container);
+  min-block-size: 100%;
+  margin: 0px auto;
+}
+
+.header {
+  margin: 100px 0;
+  background-color: var(--white-color);
+  font-size: 50px;
+  border: var(--border);
+}
+
+.logo {
+  padding-block-start: var(--big-margin);
+  text-align: center;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-end: 20px;
+}
+
+.title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-align: center;
+  padding-block-end: var(--big-margin);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  margin-block-end: 50px;
+}
+
+.main__card {
+  background-color: var(--white-color);
+  border: var(--border);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__card_title {
+  padding-inline: 10px;
+  font-size: 18px;
+  padding-block: 3px;
+  border: var(--border);
+  border-block-end: none;
+  font-variation-settings: 'wght' 700;
+}
+
+.main__card_img-block {
+  position: relative;
+}
+
+.main__card_img-block_img {
+  width: 100%;
+  height: auto;
+  border: var(--border);
+  border-inline: none;
+}
+
+.main__card_img-block_label {
+  font-family: var(--pressStart2P);
+  font-size: 14px;
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  -webkit-text-stroke: 1px var(--white-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+.main__card_text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin: 25px;
+  margin-bottom: 23px;
+}
+
+.main__card_paragraph {
+  text-shadow: 2px 2px #00ff37;
+}
+
+.main__card_button-block {
+  display: flex;
+  align-self: end;
+  align-items: end;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  gap: 7px;
+}
+
+.card__icon-button {
+  display: grid;
+  width: 38px;
+  height: 39px;
+  background-color: transparent;
+  border: none;
+  justify-self: end;
+  align-items: center;
+}
+
+.card__icon-button:hover {
+  cursor: pointer;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  transition: 0.3s ease;
+  border: 2px solid currentColor;
+  outline: none;
+}
+
+.card__like-button {
+  width: 130px;
+  padding-block: 9px;
+  border: var(--border);
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__like-button:hover {
+  cursor: pointer;
+}
+
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px currentColor;
+  transition: 0.5s;
+}
+
+.card__like-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.card__like-button:hover::after {
+  transform: translateX(0%);
+}
+
+.save-button {
+  margin: 0 auto;
+  position: relative;
+  border: var(--border);
+  display: flex;
+  margin-block-end: 103px;
+  padding: 13px 18px;
+  overflow: hidden;
+  background-color: var(--white-color);
+}
+
+.save-button:focus {
+  outline: none;
+}
+
+.save-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px currentColor;
+  transition: 0.5s;
+}
+
+.save-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.save-button:hover::after {
+  transform: translateX(0%);
+}
+
+.save-button:hover {
+  cursor: pointer;
+}
+
+.button__text {
+  position: relative;
+  color: var(--white-color);
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.save-button__floppy {
+  display: grid;
+  grid-template-columns: 21px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.save-button__floppy:hover {
+  cursor: pointer;
+}
+
+.floppy {
+  position: relative;
+  z-index: 2;
+  stroke: var(--white-color);
+  fill: var(--white-color);
+  color: var(--white-color);
+  mix-blend-mode: difference;
+}
+
+.button__text {
+  vertical-align: bottom;
+  font-family: var(--pressStart2P);
+  font-size: 14px;
+}
+
+.dialog-window {
+  font-family: var(--pressStart2P);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+.dialog-window[open] {
+  display: grid;
+  grid-template-columns: 39px minmax(198px, 234px);
+  grid-template-rows: max-content 38px;
+  padding: 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 20px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.7);
+} 
+
+.dialog-window__button {
+  grid-column: span 2;
+  background-color: transparent;
+  padding-block: 11px;
+}
+
+.dialog-window__button:hover {
+  cursor: pointer;
+}
+
+.dialog-window__button:focus {
+  outline: none;
+}
+
+.dialog-window__button:focus-visible {
+  box-shadow: 2px 2px 0px 0px currentColor;
+  transition: 0.5s;
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.saturate {
+  filter: saturate(158%);
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.opacity {
+  filter: opacity(0.5);
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.contrast {
+  filter: contrast(180%);
+}
+
+.brightness {
+  filter: brightness(50%) hue-rotate(-20deg) invert(0.7);
+}
+
+.sparks {
+  opacity: 0;
+}
+
+@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .main__card_img-block_label {
+    -webkit-text-stroke: 1px var(--white-color);
+    text-stroke: 1px var(--white-color);
+    text-shadow: none;
+  }
+} 
+
+@supports (font-variation-settings: normal) {
+  .page {
+      font-family: var(--inter);
+  }
+
+  .header {
+    font-family: var(--pressStart2P);
+  }
+}
+
+@media (width <= 375px) {
+  .save-button__floppy {
+    grid-template-columns: 1fr;
+    grid-template-rows: 28px 14px;
+  }
+
+ .main__card_img-block_label {
+  right: 13px;
+ }
+
+  .floppy {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dialog-window[open] {
+    padding: 30px 38px 30px 38px;
+    grid-template-columns: 39px minmax(155px, 198px);
+    grid-template-rows: 1fr 38px;
+  }
 }

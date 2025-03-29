@@ -9,3 +9,91 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.25;
+  }
+}
+
+.core {
+  fill: var(--none);
+  transition: fill 0.3s linear 0.3s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--black);
+  transition-delay: 0s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--red);
+  transition-delay: 0s;
+}
+
+.main-body {
+  fill: var(--none);
+  transition: fill 0.3s linear 0s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--black);
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--red);
+  transition-delay: 0.05s;
+}
+
+.like-icon {
+  height: 34px;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  transform-origin: right top;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--red);
+  transition: fill 0.3s linear ;
+}
+
+.like-icon.is-liked .main-body{
+  fill: var(--red);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:not(.is-liked) .contour {
+  fill: var(--black);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--red);
+  transition: fill 0.3s linear 0.06s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .is-liked .sparks {
+    animation: sparks 0.3s 1 ease-in 0.3s;
+  }
+  
+  .is-liked .heart {
+    animation: heart 0.3s 1 ease-in 0.1s;
+  }
+} 
