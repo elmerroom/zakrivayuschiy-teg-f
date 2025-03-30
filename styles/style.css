@@ -212,11 +212,6 @@
   padding: 15px 20px;
 }
 
-.dialog-window__button {
-  text-transform: uppercase;
-  vertical-align: bottom;
-}
-
 .button__text {
   position: relative;
   color: var(--white-color);
@@ -271,6 +266,8 @@ dialog::backdrop {
   grid-column: span 2;
   background-color: transparent;
   padding-block: 11px;
+  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 .sepia {
