@@ -16,8 +16,10 @@
   <body class="page">
     <div class="container">
       <header class="header">
-        <h1 class="logo">&lt;/HTML&gt;</h1>
-        <h2 class="title">ЗАКРЫВАЮЩИй ТЕГ</h2>
+        <span class="logo">&lt;/HTML&gt;</span>
+        <h1 class="title">
+          <span class="uppercase">Закрывающи</span>й <span class="uppercase">тег</span>
+        </h1>
       </header>
       <main class="main">
         <ul class="main__list">
@@ -25,7 +27,10 @@
             <section class="main__card">
               <h3 class="main__card_title">Фритрек и нулевой спринт: Подготовка к работе</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины без фильтра">
+                  <img class="main__card_img-block_img" src="./images/car2.webp" alt="Картинка машины без фильтра">
+                </picture>
                 <span class="main__card_img-block_label">&lt;/HTML&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -33,8 +38,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний о начале обучения.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -43,7 +48,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -55,7 +60,10 @@
             <section class="main__card">
               <h3 class="main__card_title">1 спринт: Я — чистый лист</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img sepia" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины с первым фильтром">
+                  <img class="main__card_img-block_img sepia" src="./images/car2.webp" alt="Картинка машины с первым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;/HTML&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -63,8 +71,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний о начале первого спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -73,7 +81,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -85,7 +93,10 @@
             <section class="main__card">
               <h3 class="main__card_title">1 спринт: А если не получится?</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img saturate" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c вторым фильтром">
+                  <img class="main__card_img-block_img saturate" src="./images/car2.webp" alt="Картинка машины с вторым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;CSS&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -93,8 +104,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний об окончании первого спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -103,7 +114,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -115,7 +126,10 @@
             <section class="main__card">
               <h3 class="main__card_title">2 спринт: Погоня за идеалом</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img grayscale" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c третьим фильтром">
+                  <img class="main__card_img-block_img grayscale" src="./images/car2.webp" alt="Картинка машины с третьим фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;desigions&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -123,8 +137,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний о начале второго спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -133,7 +147,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -145,7 +159,10 @@
             <section class="main__card">
               <h3 class="main__card_title">2 спринт: О тех, кто рядом</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img opacity" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c четвёртым фильтром">
+                  <img class="main__card_img-block_img opacity" src="./images/car2.webp" alt="Картинка машины с четвёртым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">care</span>
               </div>
                 <div class="main__card_text-block">
@@ -153,8 +170,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний об окончании второго спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -163,7 +180,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -175,7 +192,10 @@
             <section class="main__card">
               <h3 class="main__card_title">3 спринт: Обходные стратегии</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img blur" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c пятым фильтром">
+                  <img class="main__card_img-block_img blur" src="./images/car2.webp" alt="Картинка машины с пятым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;support&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -183,8 +203,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний о начале третьего спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -193,7 +213,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -205,7 +225,10 @@
             <section class="main__card">
               <h3 class="main__card_title">3 спринт: Когда опускаются руки</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img contrast" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c шестым фильтром">
+                  <img class="main__card_img-block_img contrast" src="./images/car2.webp" alt="Картинка машины с шестым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;lifes-style: none;&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -213,8 +236,8 @@
                   <p class="main__card_paragraph ">Место для ваших воспоминаний об окончании третьего спринта.</p>
                 </div>
                 <div class="main__card_button-block">
-                  <button class="card__icon-button">
-                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                  <button class="card__icon-button" type="button">
+                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                       <g class="heart">
                         <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                         <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -223,7 +246,7 @@
                       <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                   </button>
-                  <button class="card__like-button">
+                  <button class="card__like-button background-filling" type="button">
                     <span class="button__text">
                       Like
                     </span>
@@ -235,7 +258,10 @@
             <section class="main__card">
               <h3 class="main__card_title">«Сейчас я здесь»</h3>
               <div class="main__card_img-block">
-                <img class="main__card_img-block_img brightness" src="./images/car2.webp" alt="">
+                <picture>
+                  <source type="image/png" srcset="./images/car.png" alt="Картинка машины c седьмым фильтром">
+                  <img class="main__card_img-block_img brightness" src="./images/car2.webp" alt="Картинка машины с седьмым фильтром">
+                </picture>
                 <span class="main__card_img-block_label">&lt;experience&gt;</span>
               </div>
                 <div class="main__card_text-block">
@@ -243,8 +269,8 @@
                   <p class="main__card_paragraph ">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
                 </div>
                   <div class="main__card_button-block">
-                    <button class="card__icon-button">
-                      <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 36" >
+                    <button class="card__icon-button" type="button">
+                      <svg class="like-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 39 39" >
                         <g class="heart">
                           <path class="contour" fill="var(--black)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
                           <path class="main-body" fill="var(--none)" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
@@ -253,7 +279,7 @@
                         <path class="sparks" fill="var(--red)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                       </svg>
                     </button>
-                    <button class="card__like-button">
+                    <button class="card__like-button background-filling" type="button">
                       <span class="button__text">
                         Like
                       </span>
@@ -262,7 +288,7 @@
             </section>
           </li>
         </ul>
-        <button class="save-button" type="button" 
+        <button class="save-button background-filling" type="button" 
         onclick="window['dialog-id'].showModal()" 
         aria-controls="dialog-id">
           <span class="save-button__floppy button__text">
@@ -274,13 +300,16 @@
         </button>
 
         <dialog id="dialog-id" class="dialog-window">
+          <form  method="dialog" class="close-form">
           <svg class="floppy" viewBox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy-1" />
           </svg>
           <p>Вставьте
             дискету, чтобы продолжить</p>
-            <button class="dialog-window__button"  type="button" 
-            onclick="window['dialog-id'].close()">ок</button>
+            <button class="dialog-window__button background-filling"  type="submit">
+              <span class="button__text">ок</span>
+            </button>
+          </form>
         </dialog>
         
       </main>
